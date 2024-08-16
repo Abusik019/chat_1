@@ -1,0 +1,71 @@
+.chat-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#messages {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#messages li {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+#message-form {
+  display: flex;
+}
+
+#message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#file-input {
+  margin-top: 10px;
+}
+
+#record-video {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.video-wrapper {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.circle-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#video-preview {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: none;
+  cursor: pointer;
+}
