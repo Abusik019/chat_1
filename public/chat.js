@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const li = document.createElement('li');
     li.classList.add('message-item');
 
-    li.textContent = `${message.username}:`;
+    li.textContent = `${message.username}: `;
 
     if (message.type === 'text') {
       li.textContent += message.message;

@@ -14,11 +14,14 @@
     <ul id="messages"></ul>
     <form id="message-form">
       <input type="text" id="message-input" placeholder="Type your message...">
-      <button type="submit" id="send-button">Send</button>
+      <button type="submit" id="send-button"></button>
+      <input type="file" id="file-input">
+      <label for="file-input"></label>
     </form>
-    <input type="file" id="file-input">
-    <button id="start-recording">Record Video</button>
-    <button id="stop-recording">Stop the video</button>
+    <div class="video-message">
+      <button id="start-recording"></button>
+      <button id="stop-recording"></button>
+    </div>
     <video id="video-preview" autoplay muted></video>
   </div>
 

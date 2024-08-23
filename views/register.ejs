@@ -4,13 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register</title>
+  <link rel="stylesheet" href="/styles/register.css">
 </head>
 <body>
   <form id="register-form">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-    <button type="submit">Register</button>
+    <!-- <label for="username">Username:</label> -->
+    <input type="text" id="username" name="username" required placeholder="Username">
+    <button class="reg-btn" type="submit">OK</button>
   </form>
   <script src="/register.js"></script>
+  <script>
+    const usernameInput = document.getElementById('username');
+    const registerBtn = document.querySelector('.reg-btn');
+
+    usernameInput.addEventListener('focus', () => {
+        registerBtn.classList.add('active');
+    });
+
+    usernameInput.addEventListener('blur', () => {
+        registerBtn.classList.remove('active');
+    });
+</script>
 </body>
 </html>
